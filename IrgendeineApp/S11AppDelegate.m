@@ -7,7 +7,7 @@
 //
 
 #import "S11AppDelegate.h"
-#import "S11ViewController.h"
+#import "S11StartsViewController.h"
 #import "S11NavigationController.h"
 
 @implementation S11AppDelegate
@@ -20,7 +20,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.movies = [[NSMutableArray alloc] init];
-    self.viewController = [[S11ViewController alloc] initWithNibName:@"S11ViewController" bundle:nil];
+    self.viewController = [[S11StartsViewController alloc] initWithNibName:@"S11StartsViewController" bundle:nil];
+    
     self.navController = [[S11NavigationController alloc] init];
     
     [self.navController pushViewController:self.viewController animated:NO];

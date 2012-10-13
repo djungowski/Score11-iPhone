@@ -9,7 +9,7 @@
 #import "S11DataMovieList.h"
 #import "S11AppDelegate.h"
 #import "S11Movie.h"
-#import "S11ViewController.h"
+#import "S11StartsViewController.h"
 
 @implementation S11DataMovieList
 
@@ -42,7 +42,7 @@
         movie.ratings = [movieObject objectForKey:@"ratings"];
         [appDelegate.movies addObject:movie];
     }
-    S11ViewController *viewController = appDelegate.viewController;
+    S11StartsViewController *viewController = appDelegate.viewController;
     
     [viewController.spinner stopAnimating];
     [viewController.tableView reloadData];

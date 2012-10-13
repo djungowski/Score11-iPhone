@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class S11ViewController;
+@class S11StartsViewController;
 
 @interface S11AppDelegate : UIResponder <UIApplicationDelegate>;
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) S11ViewController *viewController;
+@property (strong, nonatomic) S11StartsViewController *viewController;
 
 @property (strong, nonatomic) UINavigationController *navController;
 

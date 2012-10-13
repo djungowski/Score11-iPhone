@@ -1,5 +1,5 @@
 //
-//  S11ViewController.h
+//  S11StartsViewController.h
 //  Score 11
 //
 //  Created by Dominik Jungowski on 10.10.12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface S11ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface S11StartsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray *movies;
 }
 

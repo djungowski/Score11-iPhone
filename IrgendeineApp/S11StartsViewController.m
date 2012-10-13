@@ -1,5 +1,5 @@
 //
-//  S11ViewController.m
+//  S11StartsViewController.m
 //  Score 11
 //
 //  Created by Dominik Jungowski on 10.10.12.
@@ -8,16 +8,16 @@
 
 #import "S11AppDelegate.h"
 #import "S11Movie.h"
-#import "S11ViewController.h"
+#import "S11StartsViewController.h"
 #import "S11MovieViewController.h"
 #import "S11MovieList.h"
 #import "S11TableViewCell.h"
 
-@interface S11ViewController ()
+@interface S11StartsViewController ()
 
 @end
 
-@implementation S11ViewController
+@implementation S11StartsViewController
 @synthesize tableView = _tableView;
 @synthesize movies = _movies;
 @synthesize spinner = _spinner;
@@ -31,10 +31,9 @@
         self.title = @"Filmstarts";
         
         // Titel und Bild fuer TabBar
-        UITabBarItem *tbi = [self tabBarItem];
-        [tbi setTitle:@"Starts"];
-        [tbi setImage:[UIImage imageNamed:@"logo-app-iphone.png"]];
-        
+
+        UITabBarItem *tbi = [[UITabBarItem alloc] initWithTitle:@"Starts" image:[UIImage imageNamed:@"clapboard.png"] tag:0];
+        [self setTabBarItem:tbi];
     }
     return self;
 }

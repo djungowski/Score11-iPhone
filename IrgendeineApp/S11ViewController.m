@@ -30,6 +30,8 @@
     S11AppDelegate *delegate = (S11AppDelegate *)[[UIApplication sharedApplication] delegate];
     movies = delegate.movies;
     self.title = @"Filmstarts";
+    
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(Add:)];
     [self loadListData];
 }
 

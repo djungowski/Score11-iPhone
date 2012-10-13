@@ -33,6 +33,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // Geht alles nicht :(
+    
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    [[self navigationItem] setRightBarButtonItem:self.editButtonItem];
+    
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
+    
+//    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
+//    self.navigationItem.rightBarButtonItem=button;
+
 }
 
 - (void)didReceiveMemoryWarning

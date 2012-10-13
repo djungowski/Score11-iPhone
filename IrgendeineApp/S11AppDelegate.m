@@ -19,15 +19,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // Override point for customization after application launch.
-    self.viewController = [[S11ViewController alloc] initWithNibName:@"S11ViewController" bundle:nil];
-    
     self.movies = [[NSMutableArray alloc] init];
-    
+    self.viewController = [[S11ViewController alloc] initWithNibName:@"S11ViewController" bundle:nil];
     self.navController = [[S11NavigationController alloc] init];
-
+    
     [self.navController pushViewController:self.viewController animated:NO];
-    self.window.rootViewController = self.navController;
+    
+    UITabBarController *tbc = [[UITabBarController alloc] init];
+    NSArray *vc = [[NSArray alloc] initWithObjects:self.navController, nil];
+    [tbc setViewControllers:vc];
+
+//    self.window.rootViewController = self.navController;
+    self.window.rootViewController = tbc;
     
     [self.window makeKeyAndVisible];
     return YES;

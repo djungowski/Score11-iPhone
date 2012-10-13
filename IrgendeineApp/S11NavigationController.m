@@ -17,9 +17,10 @@
 
 - (id)init
 {
-    self = [self initWithNavigationBarClass:[S11NavigationBar class] toolbarClass:[UIToolbar class]];
+    self = [self initWithNavigationBarClass:[S11NavigationBar class] toolbarClass:nil];
     return self;
 }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +33,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
     // Geht alles nicht :(
     

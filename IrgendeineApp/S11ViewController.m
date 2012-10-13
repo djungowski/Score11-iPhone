@@ -22,6 +22,23 @@
 @synthesize movies = _movies;
 @synthesize spinner = _spinner;
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self) {
+        // Titel fuer Navigation Bar
+        self.title = @"Filmstarts";
+        
+        // Titel und Bild fuer TabBar
+        UITabBarItem *tbi = [self tabBarItem];
+        [tbi setTitle:@"Starts"];
+        [tbi setImage:[UIImage imageNamed:@"logo-app-iphone.png"]];
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,7 +46,6 @@
     
     S11AppDelegate *delegate = (S11AppDelegate *)[[UIApplication sharedApplication] delegate];
     movies = delegate.movies;
-    self.title = @"Filmstarts";
     
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(Add:)];
     [self loadListData];

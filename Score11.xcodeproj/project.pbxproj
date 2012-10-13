@@ -21,6 +21,9 @@
 		9600290316257634009FA939 /* logo-right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9600290216257634009FA939 /* logo-right.gif */; };
 		9600290616257667009FA939 /* header-bg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9600290416257667009FA939 /* header-bg.gif */; };
 		9600290716257667009FA939 /* score11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9600290516257667009FA939 /* score11.gif */; };
+		9610C57F1629F3D2007311E6 /* S11SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9610C57D1629F3D2007311E6 /* S11SearchViewController.m */; };
+		9610C5801629F3D2007311E6 /* S11SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9610C57E1629F3D2007311E6 /* S11SearchViewController.xib */; };
+		9610C5831629F4BB007311E6 /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 9610C5821629F4BB007311E6 /* magnifying_glass.png */; };
 		961F8ED316289CBB006806E9 /* S11MovieList.m in Sources */ = {isa = PBXBuildFile; fileRef = 961F8ED216289CBB006806E9 /* S11MovieList.m */; };
 		961F8ED716289F6D006806E9 /* logo-movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 961F8ED616289F6D006806E9 /* logo-movie.png */; };
 		961F8EDA1628A0F0006806E9 /* S11URLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 961F8ED91628A0F0006806E9 /* S11URLConnection.m */; };
@@ -65,6 +68,10 @@
 		9600290216257634009FA939 /* logo-right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "logo-right.gif"; sourceTree = "<group>"; };
 		9600290416257667009FA939 /* header-bg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "header-bg.gif"; sourceTree = "<group>"; };
 		9600290516257667009FA939 /* score11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = score11.gif; sourceTree = "<group>"; };
+		9610C57C1629F3D2007311E6 /* S11SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S11SearchViewController.h; sourceTree = "<group>"; };
+		9610C57D1629F3D2007311E6 /* S11SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11SearchViewController.m; sourceTree = "<group>"; };
+		9610C57E1629F3D2007311E6 /* S11SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = S11SearchViewController.xib; sourceTree = "<group>"; };
+		9610C5821629F4BB007311E6 /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifying_glass.png; sourceTree = "<group>"; };
 		961F8ED116289CBB006806E9 /* S11MovieList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S11MovieList.h; sourceTree = "<group>"; };
 		961F8ED216289CBB006806E9 /* S11MovieList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11MovieList.m; sourceTree = "<group>"; };
 		961F8ED616289F6D006806E9 /* logo-movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-movie.png"; path = "../../../../Sites/Score11/public/img/logo-movie.png"; sourceTree = "<group>"; };
@@ -236,6 +243,9 @@
 				961F8EED1628BE83006806E9 /* S11MovieViewController.h */,
 				961F8EEC1628BE83006806E9 /* S11MovieViewController.m */,
 				961F8EEE1628BE84006806E9 /* S11MovieViewController.xib */,
+				9610C57C1629F3D2007311E6 /* S11SearchViewController.h */,
+				9610C57D1629F3D2007311E6 /* S11SearchViewController.m */,
+				9610C57E1629F3D2007311E6 /* S11SearchViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -254,6 +264,7 @@
 		963360E51629F22100516417 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				9610C5821629F4BB007311E6 /* magnifying_glass.png */,
 				963360E61629F22A00516417 /* clapboard.png */,
 			);
 			name = Icons;
@@ -331,6 +342,8 @@
 				9627224816298BBA008843F0 /* iphone-navbar.png in Resources */,
 				9627224E16299549008843F0 /* AccDisclosure.png in Resources */,
 				963360E71629F22A00516417 /* clapboard.png in Resources */,
+				9610C5801629F3D2007311E6 /* S11SearchViewController.xib in Resources */,
+				9610C5831629F4BB007311E6 /* magnifying_glass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +367,7 @@
 				961F8EEF1628BE84006806E9 /* S11MovieViewController.m in Sources */,
 				9627223A1628F030008843F0 /* S11NavigationBar.m in Sources */,
 				962722511629A1B8008843F0 /* S11NavigationController.m in Sources */,
+				9610C57F1629F3D2007311E6 /* S11SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

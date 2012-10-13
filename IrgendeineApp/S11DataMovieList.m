@@ -42,7 +42,7 @@
         movie.ratings = [movieObject objectForKey:@"ratings"];
         [appDelegate.movies addObject:movie];
     }
-    S11StartsViewController *viewController = appDelegate.viewController;
+    S11StartsViewController *viewController = appDelegate.startsViewController;
     
     [viewController.spinner stopAnimating];
     [viewController.tableView reloadData];

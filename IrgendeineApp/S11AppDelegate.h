@@ -14,9 +14,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) S11StartsViewController *viewController;
+@property (strong, nonatomic) S11StartsViewController *startsViewController;
 
-@property (strong, nonatomic) UINavigationController *navController;
+@property (strong, nonatomic) UINavigationController *startsNavController;
+@property (strong, nonatomic) UINavigationController *searchNavController;
 
 @property (strong, nonatomic) NSMutableArray *movies;
 

@@ -9,10 +9,11 @@
 #import "S11AppDelegate.h"
 #import "S11StartsViewController.h"
 #import "S11NavigationController.h"
+#import "S11SearchViewController.h"
 
 @implementation S11AppDelegate
-@synthesize viewController = _viewController;
-@synthesize navController;
+@synthesize startsViewController;
+@synthesize startsNavController;
 @synthesize movies;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,17 +21,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.movies = [[NSMutableArray alloc] init];
-    self.viewController = [[S11StartsViewController alloc] initWithNibName:@"S11StartsViewController" bundle:nil];
+    self.startsViewController = [[S11StartsViewController alloc] initWithNibName:@"S11StartsViewController" bundle:nil];
+    self.startsNavController = [[S11NavigationController alloc] init];
+    [self.startsNavController pushViewController:self.startsViewController animated:NO];
     
-    self.navController = [[S11NavigationController alloc] init];
-    
-    [self.navController pushViewController:self.viewController animated:NO];
+    S11SearchViewController *searchController = [[S11SearchViewController alloc] initWithNibName:@"S11SearchViewController" bundle:nil];
     
     UITabBarController *tbc = [[UITabBarController alloc] init];
-    NSArray *vc = [[NSArray alloc] initWithObjects:self.navController, nil];
+    NSArray *vc = [[NSArray alloc] initWithObjects:self.startsNavController, searchController, nil];
     [tbc setViewControllers:vc];
 
-//    self.window.rootViewController = self.navController;
+//    self.window.rootViewController = self.startsNavController;
     self.window.rootViewController = tbc;
     
     [self.window makeKeyAndVisible];

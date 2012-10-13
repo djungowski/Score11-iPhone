@@ -87,7 +87,7 @@
     S11MovieViewController *controller = [[S11MovieViewController alloc] initWithMovie:movie];
                             
     S11AppDelegate *delegate = (S11AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [delegate.navController pushViewController:controller animated:YES];
+    [delegate.startsNavController pushViewController:controller animated:YES];
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 

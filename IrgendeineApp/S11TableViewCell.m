@@ -10,11 +10,12 @@
 
 @implementation S11TableViewCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (id)init
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     if (self) {
         // Initialization code
+        self.textLabel.font = [UIFont fontWithName:@"Futura" size:19];
     }
     return self;
 }

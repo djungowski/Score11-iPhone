@@ -54,7 +54,7 @@
 {
     S11TableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
-        cell = [[S11TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[S11TableViewCell alloc] init];
     }
     S11Movie *movie = [movies objectAtIndex:indexPath.row];
     cell.textLabel.text = movie.name;

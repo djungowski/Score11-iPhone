@@ -21,14 +21,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.movies = [[NSMutableArray alloc] init];
+    
     self.startsViewController = [[S11StartsViewController alloc] initWithNibName:@"S11StartsViewController" bundle:nil];
     self.startsNavController = [[S11NavigationController alloc] init];
     [self.startsNavController pushViewController:self.startsViewController animated:NO];
     
     S11SearchViewController *searchController = [[S11SearchViewController alloc] initWithNibName:@"S11SearchViewController" bundle:nil];
+    self.searchNavController = [[S11NavigationController alloc] init];
+    [self.searchNavController pushViewController:searchController animated:NO];
     
     UITabBarController *tbc = [[UITabBarController alloc] init];
-    NSArray *vc = [[NSArray alloc] initWithObjects:self.startsNavController, searchController, nil];
+    NSArray *vc = [[NSArray alloc] initWithObjects:self.startsNavController, self.searchNavController, nil];
     [tbc setViewControllers:vc];
 
 //    self.window.rootViewController = self.startsNavController;

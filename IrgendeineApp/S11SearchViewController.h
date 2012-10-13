@@ -10,4 +10,7 @@
 
 @interface S11SearchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *query;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+
 @end

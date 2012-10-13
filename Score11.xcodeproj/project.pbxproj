@@ -38,6 +38,7 @@
 		9627223A1628F030008843F0 /* S11NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 962722391628F030008843F0 /* S11NavigationBar.m */; };
 		9627224816298BBA008843F0 /* iphone-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9627224716298BBA008843F0 /* iphone-navbar.png */; };
 		9627224E16299549008843F0 /* AccDisclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = 9627224D16299549008843F0 /* AccDisclosure.png */; };
+		962722511629A1B8008843F0 /* S11NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962722501629A1B8008843F0 /* S11NavigationController.m */; };
 		964E1B4A162876400078FD49 /* logo-app-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 964E1B49162876400078FD49 /* logo-app-iphone.png */; };
 		9690E8591625948C00888BBD /* S11Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9690E8581625948C00888BBD /* S11Movie.m */; };
 		96E77C3416284BFE00CF0B54 /* S11MovieListConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E77C3316284BFE00CF0B54 /* S11MovieListConnectionDelegate.m */; };
@@ -87,6 +88,8 @@
 		962722391628F030008843F0 /* S11NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11NavigationBar.m; sourceTree = "<group>"; };
 		9627224716298BBA008843F0 /* iphone-navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-navbar.png"; sourceTree = "<group>"; };
 		9627224D16299549008843F0 /* AccDisclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AccDisclosure.png; sourceTree = "<group>"; };
+		9627224F1629A1B8008843F0 /* S11NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S11NavigationController.h; sourceTree = "<group>"; };
+		962722501629A1B8008843F0 /* S11NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11NavigationController.m; sourceTree = "<group>"; };
 		964E1B49162876400078FD49 /* logo-app-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-app-iphone.png"; path = "../logo-app-iphone.png"; sourceTree = "<group>"; };
 		9690E8571625948C00888BBD /* S11Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S11Movie.h; sourceTree = "<group>"; };
 		9690E8581625948C00888BBD /* S11Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11Movie.m; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 		9627222B1628D1E6008843F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9627224F1629A1B8008843F0 /* S11NavigationController.h */,
+				962722501629A1B8008843F0 /* S11NavigationController.m */,
 				960028F4162574A6009FA939 /* S11ViewController.h */,
 				960028F5162574A6009FA939 /* S11ViewController.m */,
 				960028F7162574A6009FA939 /* S11ViewController.xib */,
@@ -336,6 +341,7 @@
 				961F8EEB1628B650006806E9 /* S11TableViewCell.m in Sources */,
 				961F8EEF1628BE84006806E9 /* S11MovieViewController.m in Sources */,
 				9627223A1628F030008843F0 /* S11NavigationBar.m in Sources */,
+				962722511629A1B8008843F0 /* S11NavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import "S11AppDelegate.h"
 #import "S11ViewController.h"
-#import "S11NavigationBar.h"
+#import "S11NavigationController.h"
 
 @implementation S11AppDelegate
 @synthesize viewController = _viewController;
@@ -24,7 +24,8 @@
     
     self.movies = [[NSMutableArray alloc] init];
     
-    self.navController = [[UINavigationController alloc] initWithNavigationBarClass:[S11NavigationBar class] toolbarClass:[UIToolbar class]];
+    self.navController = [[S11NavigationController alloc] init];
+
     [self.navController pushViewController:self.viewController animated:NO];
     self.window.rootViewController = self.navController;
     

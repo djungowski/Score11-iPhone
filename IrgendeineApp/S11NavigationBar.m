@@ -16,6 +16,8 @@
     if (self) {
         // Initialization code
         [self setBackgroundImage:[UIImage imageNamed:@"iphone-navbar.png"] forBarMetrics:UIBarMetricsDefault];
+        // RGB: 6 7 100; Das Ganze zur Basis 255
+        self.tintColor = [UIColor colorWithRed:0.03 green:0.24 blue:0.4 alpha:100];
     }
     return self;
 }

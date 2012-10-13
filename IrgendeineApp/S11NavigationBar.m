@@ -18,6 +18,14 @@
         [self setBackgroundImage:[UIImage imageNamed:@"iphone-navbar.png"] forBarMetrics:UIBarMetricsDefault];
         // RGB: 6 7 100; Das Ganze zur Basis 255
         self.tintColor = [UIColor colorWithRed:0.03 green:0.24 blue:0.4 alpha:100];
+
+        NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
+        [attributes setValue:[UIColor cyanColor] forKey:UITextAttributeTextColor];
+        [attributes setValue:[UIColor clearColor] forKey:UITextAttributeTextShadowColor];
+        [attributes setValue:[UIFont fontWithName:@"Chalkduster" size:20] forKey:UITextAttributeFont];
+//        [attributes setValue:[UIFont fontWithName:@"Palatino" size:20] forKey:UITextAttributeFont];
+        
+        [self setTitleTextAttributes: attributes];
     }
     return self;
 }

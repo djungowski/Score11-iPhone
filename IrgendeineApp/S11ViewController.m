@@ -29,7 +29,7 @@
     
     S11AppDelegate *delegate = (S11AppDelegate *)[[UIApplication sharedApplication] delegate];
     movies = delegate.movies;
-    self.title = @"Score11";
+    self.title = @"Filmstarts";
     [self loadListData];
 }
 

@@ -16,6 +16,9 @@
     if (self) {
         // Initialization code
         self.textLabel.font = [UIFont fontWithName:@"Futura" size:19];
+        
+        self.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AccDisclosure.png"]];
+//        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator; 
     }
     return self;
 }

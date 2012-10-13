@@ -37,6 +37,7 @@
 		962722331628D4FE008843F0 /* thumb-up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962722301628D4FE008843F0 /* thumb-up.gif */; };
 		9627223A1628F030008843F0 /* S11NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 962722391628F030008843F0 /* S11NavigationBar.m */; };
 		9627224816298BBA008843F0 /* iphone-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9627224716298BBA008843F0 /* iphone-navbar.png */; };
+		9627224E16299549008843F0 /* AccDisclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = 9627224D16299549008843F0 /* AccDisclosure.png */; };
 		964E1B4A162876400078FD49 /* logo-app-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 964E1B49162876400078FD49 /* logo-app-iphone.png */; };
 		9690E8591625948C00888BBD /* S11Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9690E8581625948C00888BBD /* S11Movie.m */; };
 		96E77C3416284BFE00CF0B54 /* S11MovieListConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E77C3316284BFE00CF0B54 /* S11MovieListConnectionDelegate.m */; };
@@ -85,6 +86,7 @@
 		962722381628F030008843F0 /* S11NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S11NavigationBar.h; sourceTree = "<group>"; };
 		962722391628F030008843F0 /* S11NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11NavigationBar.m; sourceTree = "<group>"; };
 		9627224716298BBA008843F0 /* iphone-navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-navbar.png"; sourceTree = "<group>"; };
+		9627224D16299549008843F0 /* AccDisclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AccDisclosure.png; sourceTree = "<group>"; };
 		964E1B49162876400078FD49 /* logo-app-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-app-iphone.png"; path = "../logo-app-iphone.png"; sourceTree = "<group>"; };
 		9690E8571625948C00888BBD /* S11Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S11Movie.h; sourceTree = "<group>"; };
 		9690E8581625948C00888BBD /* S11Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S11Movie.m; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				9627224716298BBA008843F0 /* iphone-navbar.png */,
+				9627224D16299549008843F0 /* AccDisclosure.png */,
 				9627222E1628D4FE008843F0 /* thumb-down.gif */,
 				9627222F1628D4FE008843F0 /* thumb-middle.gif */,
 				962722301628D4FE008843F0 /* thumb-up.gif */,
@@ -310,6 +313,7 @@
 				962722321628D4FE008843F0 /* thumb-middle.gif in Resources */,
 				962722331628D4FE008843F0 /* thumb-up.gif in Resources */,
 				9627224816298BBA008843F0 /* iphone-navbar.png in Resources */,
+				9627224E16299549008843F0 /* AccDisclosure.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

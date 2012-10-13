@@ -25,7 +25,7 @@
     self.movies = [[NSMutableArray alloc] init];
 //    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
 //    S11NavigationBar *navBar = [[S11NavigationBar alloc] init];
-    self.navController = [[UINavigationController alloc] initWithNavigationBarClass:[S11NavigationBar class] toolbarClass:nil];
+    self.navController = [[UINavigationController alloc] initWithNavigationBarClass:[S11NavigationBar class] toolbarClass:[UIToolbar class]];
     [self.navController pushViewController:self.viewController animated:NO];
     self.window.rootViewController = self.navController;
     
